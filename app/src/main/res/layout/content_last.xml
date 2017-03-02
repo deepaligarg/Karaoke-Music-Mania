@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mayank.mayyuu.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/last_bg"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bg1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="left|top"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="CONGRACTULATIONS....!!"
+                android:id="@+id/T1"
+                android:layout_weight="1"
+                android:textColor="#10277a"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="40"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:singleLine="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="323dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="50dp"
+            android:paddingTop="30dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:text="Your performance % is : "
+                android:id="@+id/T2"
+                android:layout_weight="1"
+                android:textColor="#15bec7"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="40"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:background="@android:color/transparent"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="277dp"
+            android:layout_height="129dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="30dp"
+            android:paddingTop="30dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:text="KARAOKE "
+                android:id="@+id/Text3"
+                android:layout_weight="1"
+                android:textColor="#f6f5fc"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="40"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif"
+                android:background="@android:color/transparent"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="247dp"
+            android:layout_height="109dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="110dp"
+            android:paddingTop="30dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Try 1 more time...!"
+                android:id="@+id/Text0"
+                android:textColor="#f9f8f1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="40"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:background="@android:color/transparent"
+                android:typeface="serif"
+                android:layout_weight="1.46" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="247dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:paddingTop="30dp"
+            android:weightSum="1">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:text="TAKE ANOTHER CHALLENGE"
+                android:id="@+id/but1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#f8edf4"
+                android:background="#c02abb"
+                android:textStyle="bold"
+                android:layout_weight="0.74"
+                android:layout_marginTop="1dp"/>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

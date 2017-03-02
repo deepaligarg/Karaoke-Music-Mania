@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mayank.mayyuu.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:layout_gravity="center_horizontal|top"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:id="@+id/bg1"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginBottom="300dp"
+            android:layout_gravity="center_horizontal|top"
+            android:id="@+id/ll1"
+            android:showDividers="end">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="PLAYLIST "
+                android:id="@+id/Te1"
+                android:layout_weight="0.85"
+                android:textColor="#f4ebf4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold|italic"
+                android:textAlignment="textStart"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shadowDx="30"
+                android:shadowDy="30"
+                android:shadowRadius="40"
+                android:textSize="35sp"
+                android:fontFamily="sans-serif"
+                android:singleLine="true"
+                android:typeface="monospace" />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:src="@drawable/player"
+                android:adjustViewBounds="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="405dp"
+            android:layout_below="@+id/ll1"
+            android:layout_gravity="center_horizontal|bottom"
+            android:weightSum="1"
+            android:background="#cf75d9">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="A-Z"
+                android:id="@+id/b11"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="60dp"
+                android:layout_weight="0.21"
+                android:textColor="#f8edf4"
+                android:background="#140b12"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="SHUFFLE"
+                android:id="@+id/b22"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_weight="0.21"
+                android:textColor="#f8edf4"
+                android:background="#140a14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="385dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:weightSum="1">
+
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_weight="1">
+            </ListView>
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

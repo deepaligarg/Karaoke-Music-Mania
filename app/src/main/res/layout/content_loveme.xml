@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="02. Wildest Dreams... "
+        android:id="@+id/refer"
+        android:textColor="#f2e2f2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="italic"
+        android:textAlignment="textStart"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowDx="30"
+        android:shadowDy="30"
+        android:shadowRadius="40"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:singleLine="true" />
+
+</LinearLayout>
